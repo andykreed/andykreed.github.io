@@ -4,80 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andy Reed | Content Designer</title>
-    <meta name="description" content="Andy Reed personal site" />
-    <meta name="author" content="Andy Reed" />
-    <link rel="canonical" href="https://andykreed.com/" />
-    <style>
-      body {
-        margin: 0;
-        font-family: system-ui, sans-serif;
-        color: #333;
-      }
-      .container {
-        display: flex;
-        min-height: 100vh;
-      }
-      .left,
-      .right {
-        width: 50%;
-        padding: 2rem;
-      }
-      .left {
-        position: relative;
-      }
-      .left img {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      h1 {
-        font-size: 3rem;
-        margin: 0;
-      }
-      h2 {
-        font-size: 0.875rem;
-        color: #888;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-      }
-      a {
-        text-decoration: underline;
-        color: #555;
-      }
-      a:hover {
-        color: #000;
-      }
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <div class="container">
-      <div class="left">
-        <img src="cc9dd3f9-d5a2-4508-8488-c2ba3379d648.png" alt="Profile" />
+    <div class="min-h-screen flex">
+      <div class="w-1/2 relative">
+        <img
+          src="cc9dd3f9-d5a2-4508-8488-c2ba3379d648.png"
+          alt="Profile"
+          class="w-full h-full object-cover absolute inset-0"
+        />
       </div>
-      <div class="right">
-        <h2>Andy Reed</h2>
-        <h1>Writer.<br />Designer.<br />Content guy.</h1>
-        <p>
-          I'm currently a Senior Content Designer at
-          <a href="https://brex.com/" target="_blank">Brex</a> in Denver, CO.
-          I previously worked at
-          <a href="https://uniswap.org/" target="_blank">Uniswap Labs</a>,
-          <a href="https://robinhood.com/" target="_blank">Robinhood</a>,
-          <a href="https://airbnb.com/" target="_blank">Airbnb</a>, and
-          <a href="https://dormroomfund.com/" target="_blank">Dorm Room Fund</a>.
-          I was also selected as a
-          <a href="https://kleinerperkins.com/fellows" target="_blank">Kleiner Perkins Design Fellow</a>.
-        </p>
-        <h3 style="margin-top: 2rem; font-size: 0.875rem; color: #888;">Connect</h3>
-        <ul style="list-style: none; padding-left: 0;">
-          <li><a href="mailto:andy@andykreed.com">Email</a></li>
-          <li><a href="https://linkedin.com/in/andykreed" target="_blank">LinkedIn</a></li>
-          <li><a href="https://twitter.com/andykreed" target="_blank">Twitter</a></li>
-        </ul>
-        <p style="font-size: 0.875rem; color: #aaa;">©2025</p>
+      <div class="w-1/2 p-8 lg:p-12 flex items-center">
+        <div class="w-full space-y-20">
+          <header>
+            <h2 class="text-sm tracking-wider text-gray-500 mb-8">ANDY REED</h2>
+            <div class="space-y-4">
+              <h1 class="text-5xl font-bold">Writer.</h1>
+              <h1 class="text-5xl font-bold">Designer.</h1>
+              <h1 class="text-5xl font-bold">Content guy.</h1>
+            </div>
+          </header>
+          <div class="space-y-6 text-gray-700">
+            <p>
+              I'm currently a Senior Content Designer at
+              <a
+                href="https://brex.com/"
+                class="font-semibold underline hover:text-blue-600"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Brex</a
+              >
+              in Denver, CO. I previously worked at
+              <a
+                href="https://uniswap.org/"
+                class="font-semibold underline hover:text-blue-600"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Uniswap Labs</a
+              >,
+              <a
+                href="https://robinhood.com/"
+                class="font-semibold underline hover:text-blue-600"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Robinhood</a
+              >,
+              <a
+                href="https://airbnb.com/"
+                class="font-semibold underline hover:text-blue-600"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Airbnb</a
+              >, and
+              <a
+                href="https://dormroomfund.com/"
+                class="font-semibold underline hover:text-blue-600"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Dorm Room Fund</a
+              >. I was also selected as a
+              <a
+                href="https://kleinerperkins.com/fellows"
+                class="font-semibold underline hover:text-blue-600"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Kleiner Perkins Design Fellow</a
+              >.
+            </p>
+            <footer class="space-y-8">
+              <div>
+                <h3 class="text-sm font-medium text-gray-500 mb-4">Connect</h3>
+                <div class="space-y-2">
+                  <a
+                    href="mailto:andy@andykreed.com"
+                    class="block text-gray-700 underline font-semibold hover:text-gray-900"
+                    >Email</a
+                  >
+                  <a
+                    href="https://linkedin.com/in/andykreed"
+                    class="block text-gray-700 underline font-semibold hover:text-gray-900"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                  <a
+                    href="https://twitter.com/andykreed"
+                    class="block text-gray-700 underline font-semibold hover:text-gray-900"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Twitter</a
+                  >
+                </div>
+              </div>
+              <p class="text-sm text-gray-500">©2025</p>
+            </footer>
+          </div>
+        </div>
       </div>
     </div>
   </body>
