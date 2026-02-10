@@ -3,108 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andy Reed | Content Designer</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <title>Andy Reed | AI Behavior @ Brex</title>
+
+    <!-- Tailwind (CDN, no build step) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
   </head>
-  <body>
-    <div class="min-h-screen flex">
-      <div class="w-1/2 relative">
+
+  <body class="bg-white text-gray-900">
+    <!-- Mobile: stacked. Desktop: full-height split with no bottom gap -->
+    <div class="min-h-screen lg:h-screen flex flex-col lg:flex-row">
+      <!-- Image panel -->
+      <div class="w-full lg:w-1/2 lg:h-screen">
         <img
-          src="cc9dd3f9-d5a2-4508-8488-c2ba3379d648.png"
-          alt="Profile"
-          class="w-full h-full object-cover absolute inset-0"
+          src="portrait.png"
+          alt="Andy Reed wearing a cowboy hat at a rodeo"
+          class="w-full h-[42vh] sm:h-[52vh] lg:h-full object-cover block"
         />
       </div>
-      <div class="w-1/2 p-8 lg:p-12 flex items-center">
-        <div class="w-full space-y-20">
-          <header>
-            <h2 class="text-sm tracking-wider text-gray-500 mb-8">ANDY REED</h2>
-            <div class="space-y-4">
-              <h1 class="text-5xl font-bold">Writer.</h1>
-              <h1 class="text-5xl font-bold">Designer.</h1>
-              <h1 class="text-5xl font-bold">Content guy.</h1>
-            </div>
-          </header>
-          <div class="space-y-6 text-gray-700">
-            <p>
-              I'm currently a Senior Content Designer at
-              <a
-                href="https://brex.com/"
-                class="font-semibold underline hover:text-blue-600"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Brex</a
-              >
-              in Denver, CO. I previously worked at
-              <a
-                href="https://uniswap.org/"
-                class="font-semibold underline hover:text-blue-600"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Uniswap Labs</a
-              >,
-              <a
-                href="https://robinhood.com/"
-                class="font-semibold underline hover:text-blue-600"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Robinhood</a
-              >,
-              <a
-                href="https://airbnb.com/"
-                class="font-semibold underline hover:text-blue-600"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Airbnb</a
-              >, and
-              <a
-                href="https://dormroomfund.com/"
-                class="font-semibold underline hover:text-blue-600"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Dorm Room Fund</a
-              >. I was also selected as a
-              <a
-                href="https://kleinerperkins.com/fellows"
-                class="font-semibold underline hover:text-blue-600"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Kleiner Perkins Design Fellow</a
-              >.
-            </p>
-            <footer class="space-y-8">
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 mb-4">Connect</h3>
-                <div class="space-y-2">
-                  <a
-                    href="mailto:andy@andykreed.com"
-                    class="block text-gray-700 underline font-semibold hover:text-gray-900"
-                    >Email</a
-                  >
-                  <a
-                    href="https://linkedin.com/in/andykreed"
-                    class="block text-gray-700 underline font-semibold hover:text-gray-900"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >LinkedIn</a
-                  >
-                  <a
-                    href="https://twitter.com/andykreed"
-                    class="block text-gray-700 underline font-semibold hover:text-gray-900"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Twitter</a
-                  >
-                </div>
+
+      <!-- Content panel -->
+      <main class="w-full lg:w-1/2 lg:h-screen lg:overflow-y-auto">
+        <div class="px-8 py-10 sm:px-12 sm:py-14 lg:px-14 lg:py-16">
+          <div class="max-w-xl space-y-12">
+            <!-- HERO -->
+            <header class="space-y-7">
+              <div class="flex items-center justify-between">
+                <h2 class="text-sm tracking-wide text-gray-500">Andy Reed</h2>
+                <span class="text-sm tracking-wide text-gray-500">Denver, CO</span>
               </div>
-              <p class="text-sm text-gray-500">©2025</p>
-            </footer>
+
+              <div class="space-y-3">
+                <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+                  Senior Product Designer
+                </h1>
+
+                <p class="text-base sm:text-lg font-semibold text-gray-800">
+                  AI Behavior @ Brex
+                </p>
+
+                <p class="text-sm tracking-wide text-gray-500">
+                  Prompts, Evals, and Character Design (aka Agent Wrangling)
+                </p>
+              </div>
+
+              <div class="space-y-4">
+                <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+                  I define what
+                  <span class="font-semibold text-gray-900">“good”</span> looks
+                  like for AI agents and build the systems that enforce it. At
+                  Brex, I design prompts, evaluations, and agent behavror, including constitutional scorers, golden datasets, and pass/fail criteria that catch regressions before anything ships
+                </p>
+
+                <p class="text-gray-600 text-base sm:text-lg leading-relaxed">
+                  Five years of fintech content design turned out to be excellent training for this. Writing for clarity, compliance, and concision translates directly to writing rules machines actually follow.
+                </p>
+              </div>
+            </header>
+
+<section class="space-y-10 text-gray-700">
+  <!-- Previously -->
+  <div class="space-y-2">
+    <h3 class="text-sm tracking-wide text-gray-500">Previously</h3>
+    <p class="leading-relaxed">
+      <a
+        href="https://uniswap.org/"
+        class="underline underline-offset-4 hover:text-gray-900"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Uniswap Labs</a
+      >,
+      <a
+        href="https://robinhood.com/"
+        class="underline underline-offset-4 hover:text-gray-900"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Robinhood</a
+      >,
+      <a
+        href="https://airbnb.com/"
+        class="underline underline-offset-4 hover:text-gray-900"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Airbnb</a
+      >,
+      <a
+        href="https://dormroomfund.com/"
+        class="underline underline-offset-4 hover:text-gray-900"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Dorm Room Fund</a
+      >,
+      <a
+        href="https://kleinerperkins.com/fellows"
+        class="underline underline-offset-4 hover:text-gray-900"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Kleiner Perkins Fellows</a
+      >
+    </p>
+  </div>
+
+  <!-- Connect -->
+  <div class="space-y-2">
+    <h3 class="text-sm tracking-wide text-gray-500">Connect</h3>
+    <p class="leading-relaxed">
+      <a
+        href="mailto:andykreed@gmail.com"
+        class="underline underline-offset-4 hover:text-gray-900"
+        >Email</a
+      >,
+      <a
+        href="https://linkedin.com/in/andykreed"
+        class="underline underline-offset-4 hover:text-gray-900"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >,
+      <a
+        href="https://x.com/andyreed"
+        class="underline underline-offset-4 hover:text-gray-900"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Twitter</a
+      >
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <p class="text-sm tracking-wide text-gray-500">©2026</p>
+</section>
+
           </div>
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>
